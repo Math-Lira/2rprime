@@ -84,23 +84,30 @@ export default function LineCharts() {
   }, []);
 
   return (
-    <div className="border border-gray-200 rounded-xl shadow-lg p-4 bg-white">
-      <div className="flex justify-center sm:justify-end items-center gap-x-4 mb-3 sm:mb-6">
-        <div className="inline-flex items-center">
-          <span className="size-2.5 inline-block bg-Green rounded-sm me-2"></span>
-          <span className="text-[13px] text-gray-600">Income</span>
-        </div>
-        <div className="inline-flex items-center">
-          <span className="size-2.5 inline-block bg-darkGreen rounded-sm me-2"></span>
-          <span className="text-[13px] text-gray-600">Outcome</span>
-        </div>
-        <div className="inline-flex items-center">
-          <span className="size-2.5 inline-block bg-lightGreen rounded-sm me-2"></span>
-          <span className="text-[13px] text-gray-600">Others</span>
-        </div>
-      </div>
+<div className="border border-gray-200 rounded-xl shadow-lg p-4 bg-white relative">
+  <h2 className="absolute top-4 left-7 text-lg font-bold text-gray-800">
+    Semanal
+  </h2>
 
-      <div id="hs-curved-line-charts"></div>
+  <div className="flex justify-center sm:justify-end items-center gap-x-4 mb-3 mr-5 sm:mb-6">
+    <div className="inline-flex items-center">
+      <span className="size-2.5 inline-block bg-Green rounded-sm me-2"></span>
+      <span className="text-[13px] text-gray-600">Income</span>
     </div>
+
+    <div className="inline-flex items-center">
+      <span className="size-2.5 inline-block bg-darkGreen rounded-sm me-2"></span>
+      <span className="text-[13px] text-gray-600">Outcome</span>
+    </div>
+
+    <div className="inline-flex items-center">
+      <span className="size-2.5 inline-block bg-lightGreen rounded-sm me-2"></span>
+      <span className="text-[13px] text-gray-600">Others</span>
+    </div>
+  </div>
+
+  <div id="hs-curved-line-charts"></div>
+</div>
+
   );
 }

@@ -28,7 +28,7 @@ export default function PieChart() {
       dataLabels: {
         style: {
           fontSize: "14px",
-          fontFamily: "Inter, ui-sans-serif",
+          fontFamily: "Poppins, sans-serif",
           fontWeight: "400",
           colors: ["#fff", "#fff", "#1f2937"],
         },
@@ -81,8 +81,10 @@ export default function PieChart() {
       <div id="hs-pie-chart"></div>
     </div>
 
+    <h2 className="absolute top-4 left-7 text-lg font-bold text-gray-800">Mensal</h2>
+
     {/* 🔹 Posiciona a legenda dentro do quadrado no canto inferior esquerdo */}
-    <div className="absolute bottom-4 right-5 flex items-center gap-x-4">
+    <div className="absolute bottom-4 right-7 flex items-center gap-x-4">
       <div className="inline-flex items-center">
         <span className="size-2.5 inline-block bg-darkGreen rounded-sm me-2"></span>
         <span className="text-[13px] text-gray-600">Income</span>
@@ -100,7 +102,5 @@ export default function PieChart() {
     </div>
   </div>
 </div>
-
-
   );
 }
